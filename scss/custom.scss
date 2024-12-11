@@ -2,16 +2,122 @@
 // This is the file you will want to update to customize your page.
 
 // Import Google fonts here
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 // Include any default variable overrides here (colors, font sizes, font family, etc..)
+$primary:       #115D92;
+$secondary:     #2983B6;
+$success:       #A4D882;
+$info:          #DCF0FB;
+$warning:       #52A5D7;
+$danger:        #E5446D;
+$light:         #ffffff;
+$dark:          #181853;
 
 // Adjust nav link hover color here
+$navbar-light-color:  #ffffff;
+$navbar-light-hover-color: #115D92;
+$navbar-light-active-color: #2983B6;
 
+// Typography
+// Change font family for base text
+$font-family-sans-serif: 'PT Serif', serif;
 
+// Change font family for headings
+$headings-font-family: 'Black Han Sans', sans-serif;
 
-
+$h1-font-size: 3.052rem;
+$h2-font-size: 2.441rem;
+$h3-font-size: 1.953rem;
+$h4-font-size: 1.563rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Custom css down below
+
+.nav-link:hover {
+	color: black !important;
+}
+
+.rounded-button {
+    border-radius: 40px;
+    padding: 10px 20px; 
+	width: 150px;
+}
+
+.rounded-button:hover {
+	background-color: black !important;
+}
+
+#hero {
+	background-color: $info;
+}
+
+#hero img {
+	margin: 0;
+	padding: 0;
+}
+
+#about-us {
+	background-color: $primary;
+}
+
+.carousel {
+	margin: 0 10vw;
+}
+
+.carousel-inner {
+	max-width: 600px;
+}
+
+// #virtual-controller {
+//     padding: 50px 0; /* Adds spacing around the section */
+// }
+
+// .rectangle-container {
+//     display: flex;
+//     align-items: center;
+//     width: 80%; 
+//     max-width: 800px;
+//     background-color: #f8f9fa;
+//     border: 1px solid $primary; /* Optional border for the rectangle */
+//     padding: 20px;
+// /*  border-radius: 10px; Optional rounded corners */
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);;
+// }
+
+// .text-left-section {
+//     flex: 1;
+//     padding-right: 20px; /* Adds spacing between text and divider */
+// }
+
+// .line-divider {
+//     height: 100%;
+//     width: 6px;
+//     background-color: $primary; /* Color of the divider */
+//     margin: 0 20px; /* Adds space around the divider */
+// }
+
+// .text-right-section {
+//     flex: 1;
+//     /* add any other things you want here for extra adjustments */
+// }
+
+// /* ^^These were helpful suggestions I learnt*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: $primary;
+}
+
+.carousel-control-prev {
+	left: -10px;
+}
+
+.carousel-control-next {
+	right: -10px;
+}

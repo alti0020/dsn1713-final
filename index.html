@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Final</title>
+	<link rel="stylesheet" href="css/custom.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+</head>
+<body>
+	<!-- Navigation-->
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+		  <a href="/index.html" class="navbar-brand animate__animated animate__slideInDown"> <img src="images/OutlineUnicornLogoSmall.jpg" alt="Outline Unicorn logo" width="100px" height=""></a>
+		  <!-- slide down animation-->
+		  <button class="navbar-toggler animate__animated animate__bounceIn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- Bounce In animation-->
+			<span class="navbar-toggler-icon" ></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-4 ms-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active text-primary fw-bold" aria-current="page" href="/index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link text-secondary" href="/about.html">About</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link text-secondary" href="/contact.html">Contact</a>
+			  </li>
+			</ul>
+			<div class="d-flex align-items-center">
+				<!-- Register Now Button -->
+				<button type="button" class="btn btn-primary">Register Now</button>
+			  </div>
+			</div>
+		  </div>
+		</nav>
 
+		<!--Hero-->
+		<section id="hero">
+			<div class="container text-left mt-0 text-primary p-0"> 
+			  <div class="row align-items-center">
+				<div class="col-md-6 ord ps-5">
+				  <h6 class="fw-bold mt-5">About Us</h6>
+				  <h1 class="fw-bold">Maximize Your Profits</h1>
+				  <p>Track bills in an <strong>accessible place.</strong></p>
+				  <button type="button" class="btn btn-class bg-primary text-light rounded-button mb-5">Start Now</button>
+				</div>
+				<div class="col-md-6 order-md-2 order-first">
+					<img src="images/accounting-photo.jpg" alt=" accounting photo" class="img-fluid">
+				</div>
+			  </div>
+			</div>
+		  </section>
+
+		  <section id="about-us">
+			<div class="container text-center col-md-6 ord ps-5">
+			  <h2 class="fw-bold text-light pt-4">About Us</h2>
+			  <p class="text-light">We at Outline Unicorn have the ability and experience
+				to manage your accounting, bookkeeping, and tax needs.</p>
+			  <button type="button" class="btn btn-class btn-secondary mb-5 px-4 text-light">Read More</button>
+			</div>
+			
+			<section id="services" class="d-flex justify-content-center pb-5 position-relative">
+				<!-- Carousel Container -->
+				<div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<!-- Carousel Item 1 -->
+						<div class="carousel-item active">
+							<div class="container p-5 d-flex flex-column flex-md-row align-items-center border shadow rounded-3 bg-white">
+								<!-- Left Section (Text) -->
+								<div class="text-left-section mb-3 mb-md-0 flex-md-1">
+									<h2>Virtual Controller</h2>
+								</div>
+								<!-- Divider (visible only on medium screens and larger) -->
+								<div class="line-divider d-none d-md-block" style="width: 1px; background-color: #181853; height: 100%; margin: 0 20px;"></div>
+								<!-- Right Section (Description) -->
+								<p class="mb-3 mb-md-0 text-center text-md-start flex-md-1">This service is a unique one because it waves the burden of hiring a controller and paying a huge amount of money to keep them with many benefits.
+								</p>
+							</div>
+						</div>
+						<!-- Carousel Item 2 -->
+						<div class="carousel-item">
+							<div class="container p-5 d-flex flex-column flex-md-row align-items-center border shadow rounded-3 bg-white">
+								<!-- Left Section (Text) -->
+								<div class="text-left-section mb-3 mb-md-0 flex-md-1">
+									<h2>Accounting Solutions</h2>
+								</div>
+								<!-- Divider (visible only on medium screens and larger) -->
+								<div class="line-divider d-none d-md-block" style="width: 1px; background-color: #181853; height: 100%; margin: 0 20px;"></div>
+								<!-- Right Section (Description) -->
+								<p class="mb-3 mb-md-0 text-center text-md-start flex-md-1">Our accounting solutions streamline the process of managing finances, making it easier for businesses to grow.
+								</p>
+							</div>
+						</div>
+						<!-- Carousel Item 3 -->
+						<div class="carousel-item">
+							<div class="container p-5 d-flex flex-column flex-md-row align-items-center border shadow rounded-3 bg-white">
+								<!-- Left Section (Text) -->
+								<div class="text-left-section mb-3 mb-md-0 flex-md-1">
+									<h2>Tax Services</h2>
+						        </div>
+								<!-- Divider (visible only on medium screens and larger) -->
+								 <div class="line-divider d-none d-md-block" style="width: 1px; background-color: #181853; height: 100%; margin: 0 20px;">
+								 </div>
+								<!-- Right Section (Description) -->
+								<p class="mb-3 mb-md-0 text-center text-md-start flex-md-1">We offer expert tax services to help businesses minimize liabilities and comply with tax regulations.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<!-- Carousel Controls -->
+				<button class="carousel-control-prev position-absolute" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next position-absolute" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</section>
+
+			<!-- <section id="services" class="d-flex justify-content-center pb-5">
+				<div class="rectangle-container d-flex align-items-center p-5 flex-column flex-md-row">
+					<div class="text-left-section mb-3 mb-md-0">
+						<h2>Virtual Controller</h2>
+					</div>
+					<div class="line-divider d-none d-md-block"></div>
+					<p class="mb-3 mb-md-0 align-items-center text-sm-center text-md-start">This service is a unique one because it waves the burden of hiring a controller and paying a huge amount of money to keep them with many benefits.</p>
+					</div>
+				</div>
+			</section> -->
+		  </section>
+
+
+	  
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
