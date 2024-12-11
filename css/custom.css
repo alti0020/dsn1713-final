@@ -11935,7 +11935,7 @@ footer a i {
 
 #about-us-2 {
   position: relative; /* Ensures the overlay is positioned relative to the section */
-  background-image: url("/images/accounting-business-meeting-image.jpg");
+  background-image: url("../images/accounting-business-meeting-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
