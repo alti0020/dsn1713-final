@@ -40,7 +40,11 @@ $h6-font-size: 1rem;
 // Custom css down below
 
 .nav-link:hover {
-	color: black !important;
+	color: $dark !important;
+}
+
+.nav-link.active {
+	font-weight: bold;
 }
 
 .rounded-button {
@@ -50,7 +54,7 @@ $h6-font-size: 1rem;
 }
 
 .rounded-button:hover {
-	background-color: black !important;
+	background-color: $dark !important;
 }
 
 #hero {
@@ -74,40 +78,104 @@ $h6-font-size: 1rem;
 	max-width: 600px;
 }
 
-// #virtual-controller {
-//     padding: 50px 0; /* Adds spacing around the section */
-// }
+.square-card {
+	aspect-ratio: 1; /* Ensures the card is a square */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+  }
+  
+.card-body {
+	flex-grow: 1; /* Ensures the card body fills remaining space evenly */
+	overflow-y: auto;
+	max-height: 100%;
+}
 
-// .rectangle-container {
-//     display: flex;
-//     align-items: center;
-//     width: 80%; 
-//     max-width: 800px;
-//     background-color: #f8f9fa;
-//     border: 1px solid $primary; /* Optional border for the rectangle */
-//     padding: 20px;
-// /*  border-radius: 10px; Optional rounded corners */
-//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);;
-// }
+.card-body .btn-block {
+	width: 100%;
+}
 
-// .text-left-section {
-//     flex: 1;
-//     padding-right: 20px; /* Adds spacing between text and divider */
-// }
+.card {
+	max-width: 300px; 
+	margin: auto;
+}
 
-// .line-divider {
-//     height: 100%;
-//     width: 6px;
-//     background-color: $primary; /* Color of the divider */
-//     margin: 0 20px; /* Adds space around the divider */
-// }
+#cards .card {
+	padding: .5rem;
+}
 
-// .text-right-section {
-//     flex: 1;
-//     /* add any other things you want here for extra adjustments */
-// }
+.square-card:hover {
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
 
-// /* ^^These were helpful suggestions I learnt*/
+/* Remove the underline and dashes from the links */
+footer a {
+  text-decoration: none; /* Removes the underline */
+  list-style: none;      /* Removes any list bullet points or dashes */
+}
+
+/* Add space between the icon and text */
+footer a span {
+  margin-left: 8px; /* Adjust this value as needed */
+}
+
+/* Optional: Styling the icon */
+footer a i {
+  font-size: 1.5rem;
+}
+
+#about-us-2 {
+	position: relative; /* Ensures the overlay is positioned relative to the section */
+	background-image: url('/images/accounting-business-meeting-image.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 300px; /* Set the height or adjust based on your content */
+  
+	&::before {
+	  content: ''; /* Required to create the pseudo-element */
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgba(17, 93, 146, 0.7); /* Adjust the color and opacity */
+	  z-index: 1; /* Ensure the overlay is above the image but below the content */
+	}
+  
+	.container {
+	  position: relative; /* Ensures content stays above the overlay */
+	  z-index: 2; /* Ensures content is above the overlay */
+	  color: white; /* Makes text visible over the overlay */
+	}
+  }
+
+  #about-us-2 .about-button {
+	border-radius: 70px;
+    padding: 5px 20px; 
+	width: 150px;
+  }
+
+  #free-test .free-test-button {
+	border-radius: 70px;
+    padding: 5px 20px; 
+	width: 150px;
+  }
+
+
+.button-contact i {
+	margin-left: 8px;
+}
+
+#hero-2 {
+	background-color: $primary;
+}
+
+#hero-2 img {
+	margin: 0;
+	padding: 0;
+}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
